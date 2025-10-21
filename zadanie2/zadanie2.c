@@ -6,7 +6,7 @@ int main(){
 	printf("Podaj liczbę a: ");
 	scanf("%f", &a);
 	if (a == 0){
-		printf("Funkcja nie ma rozwiązania w ℝ");
+		printf("Funkcja nie jest funkcją kwadratową");
 		return 0;
 	}
 	printf("Podaj liczbę b: ");
