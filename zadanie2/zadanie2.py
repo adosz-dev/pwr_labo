@@ -3,7 +3,7 @@ import math
 def main():
 	a = float(input("Podaj liczbę a: "))
 	if a == 0:
-		print("Funkcja nie ma rozwiązania w ℝ")
+		print("Funkcja nie jest funkcją kwadratową")
 		return 
 	b = float(input("Podaj liczbę b: "))
 	c = float(input("Podaj liczbę c: "))
