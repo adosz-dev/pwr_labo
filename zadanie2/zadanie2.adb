@@ -8,7 +8,7 @@ begin
 	Put("Podaj liczbę a: ");
 	Get(a);
 	if a = 0.0 then
-		Put_Line("Funkcja nie ma rozwiązania w R");
+		Put_Line("Funkcja nie jest funkcją kwadratową");
 		return;
 	end if;
 	Put("Podaj liczbę b: ");
