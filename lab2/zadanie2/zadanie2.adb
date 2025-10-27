@@ -6,6 +6,7 @@ procedure zadanie2 is
 	Liczba : Integer;
 	function Czy_Pierwsza(Liczba : Integer) return Boolean is 
 		Pierwiastek: Integer;
+		I: Integer := 3;
 	begin
 		if Liczba <= 1 then
 			return False;
@@ -15,10 +16,11 @@ procedure zadanie2 is
 			return False;
 		else
 			Pierwiastek := Integer(Sqrt(Float(Liczba)))+1;
-			for I in 3 .. Pierwiastek loop
+			while I < Pierwiastek loop
 				if Liczba mod I = 0 then
 					return False;
 				end if;
+				I := I+2;
 			end loop;
 		end if;
 		return True;

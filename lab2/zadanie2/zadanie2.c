@@ -13,7 +13,7 @@ int czy_pierwsza(int liczba){
 	else if (liczba%2 == 0){
 		return 0;
 	}
-	for (int i=3; i <= sqrt(liczba); i++){
+	for (int i=3; i <= sqrt(liczba); i+=2){
 		if (liczba%i==0){
 			return 0;
 		}
