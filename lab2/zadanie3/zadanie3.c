@@ -30,14 +30,12 @@ void rozklad(int n, int tab[]){
 	int d = 3;
 	int dd = 9;
 
-	tab[0] = 0;
 	while (n%2 == 0){
 		tab[0] ++;
 		n = n / 2;
 	}
 
 	while (n >= dd){
-		tab[d-2] = 0;
 		while (n%d == 0){
 			n = n / d;
 			tab[d-2] ++;
