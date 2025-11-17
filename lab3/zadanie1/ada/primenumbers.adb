@@ -5,7 +5,7 @@ package body PrimeNumbers is
 		s.all := (others => True);
 		for i in s'Range loop
 			if s(i) then
-				j := i + i; 
+				j := i * i; 
 				while j <= s'Last loop
 					s(j) := False;
 					j := j + i;

@@ -1,7 +1,7 @@
 def compute_sieve(sieve: list, n: int):
 	for i in range(n+1):
 		if sieve[i]:
-			j = i + i
+			j = i * i
 			while j < len(sieve):
 				sieve[j] = False
 				j = j + i
