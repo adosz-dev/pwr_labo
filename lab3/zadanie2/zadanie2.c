@@ -25,6 +25,7 @@ void dwumian(unsigned long n, unsigned long k){
 		}
 	}
 	printf("%lu", tab[k]);
+  free(tab);
 }
 
 int main(int argc, char *argv[]){

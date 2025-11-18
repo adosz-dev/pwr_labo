@@ -28,6 +28,7 @@ void znajdz_pierwsza(int n){
 		kandydat += 2;
 	}
 	printf("n-ta liczba pierwsza: %d", pierwsze[n-1]);
+  free(pierwsze);
 }
 
 int main(int argc, char *argv[]){

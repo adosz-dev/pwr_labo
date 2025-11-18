@@ -40,4 +40,5 @@ begin
 	Get(n);
 	pierw := new Pierwsze(1 .. n);
 	znajdz_pierwsza(pierw, n);
+  Free(pierw);
 end Zadanie3;
