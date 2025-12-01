@@ -1,0 +1,1 @@
+from .totient import totient
