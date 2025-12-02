@@ -19,10 +19,10 @@ begin
     Put_Line(IsPrime(N)'Image);
   elsif Argument(1) = "pr" then
 		Put_Line(Prime(N)'Image);
-  --  else then
-  --    Put_Line("Błędny parametr!");
+  else
+    Put_Line("Błędny parametr!");
   end if;
---  exception
-	--  when CONSTRAINT_ERROR =>
-	--  	Put_Line("Drugi parametr powinien być liczbą naturalną");
+exception
+	when CONSTRAINT_ERROR =>
+		Put_Line("Drugi parametr powinien być liczbą naturalną");
 end Zadanie1;

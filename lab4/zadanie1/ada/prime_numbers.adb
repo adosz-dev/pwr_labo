@@ -71,7 +71,7 @@ package body Prime_Numbers is
       new Standard.Ada.Unchecked_Deallocation(Primes, Primes_Ptr);
 		function Find_Prime_Is_Prime(P: Primes_Ptr; Candidate, C: Natural) return Boolean is
 		begin 
-			for I in 0 .. C loop
+			for I in 0 .. C-1 loop
 				if P(I)*P(I) > Candidate then
 					return true;
 				end if;
@@ -83,9 +83,10 @@ package body Prime_Numbers is
 		end Find_Prime_Is_Prime;
 	begin
 		P := new Primes(0 .. N);
+    P(0) := 2;
 		while C<N loop
 			if Find_Prime_Is_Prime(P, Candidate, C) then
-				P(c) := Candidate;
+				P(C) := Candidate;
 				C := C + 1;
 			end if;
 			Candidate := Candidate + 2;
