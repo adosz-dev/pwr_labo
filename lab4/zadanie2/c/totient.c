@@ -11,7 +11,7 @@ unsigned totient(unsigned n){
 		p ++;
 	}
 	if (n>1){
-		result -= result / n;
+		result -= 1;
 	}
 	return result;
 }

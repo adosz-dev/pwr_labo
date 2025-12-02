@@ -15,7 +15,7 @@ package body Totient is
     end loop;
 
     if n > 1 then
-      result := result - (result/n);
+      result := result - 1;
     end if;
     return result;
   end Totient;

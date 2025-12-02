@@ -13,5 +13,4 @@ begin
     Result := Totient.Totient(N);
     Put_Line("totient("& N'Image & ")=" &Result'Image);
   end loop;
-	--  Put_Line(Argument_Count'Image);
 end zadanie2;
