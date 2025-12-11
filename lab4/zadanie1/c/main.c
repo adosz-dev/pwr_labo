@@ -34,7 +34,6 @@ int main(int argc, char *argv[]){
   }
   else {
     printf("Błędny parametr");
-    printf("%s", argv[1]);
     return -1;
   }
   return 0;
