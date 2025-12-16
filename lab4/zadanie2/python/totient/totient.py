@@ -8,6 +8,6 @@ def totient(n):
 			result -= result // p
 		p += 1
 	if n > 1:
-		result -= 1
+		result -= result // n
 	return result
 
