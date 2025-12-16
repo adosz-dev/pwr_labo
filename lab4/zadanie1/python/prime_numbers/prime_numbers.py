@@ -46,7 +46,7 @@ def IsPrime(n):
 
 def CheckParams(argv: list):
 	if len(argv) != 3:
-		print("nigga")
+		return False
 	if argv[1] not in ["pn", "pr", "ip"]:
 		return False
 	if not argv[2].isdigit():
