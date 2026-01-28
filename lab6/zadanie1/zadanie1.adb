@@ -28,12 +28,15 @@ procedure Zadanie1 is
     J: Integer := N - 1;
     C: Positive;
   begin
-    while i >= 0 and Tab(I)>Tab(I+1) loop
+    while I > 0 and Tab(I)>Tab(I+1) loop
       I := I - 1;
     end loop;
-    if I < 0 then
+    if I = 0 and Tab(0) > Tab(1) then
       return false;
     end if;
+    while (Tab(I)>Tab(J)) loop
+      J := J - 1;
+    end loop;
     C := Tab(J);
     Tab(J) := Tab(I);
     Tab(I) := C;
@@ -69,7 +72,6 @@ begin
   N := Positive'Value(Argument(1));
   Tab := new Tablica (0 .. N-1);
   Gen_Tab(Tab, N);
-  Put_Line("Hej");
   while Next(Tab, N) loop
     if Check(Tab, N) then
       Put("[");
@@ -80,5 +82,6 @@ begin
       Counter := Counter + 1;
     end if;
   end loop;
+  Put_Line("Łącznie rozwiązań:"& Counter'Image);
   Free(Tab);
 end Zadanie1;
